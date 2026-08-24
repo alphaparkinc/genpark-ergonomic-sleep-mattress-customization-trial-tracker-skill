@@ -1,0 +1,41 @@
+{
+  "name": "genpark-ergonomic-sleep-mattress-customization-trial-tracker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - DTC ergonomic orthopedic sleep mattress customization and 100-night risk-free trial return/exchange manager.",
+  "author": "genpark",
+  "category": "dtc",
+  "tags": [
+    "sleep-tech",
+    "orthopedic-mattress",
+    "100-night-trial",
+    "dtc-furniture",
+    "wakefit"
+  ],
+  "inputs": {
+    "sleeper_weight_kg": {
+      "type": "number"
+    },
+    "sleeping_posture": {
+      "type": "string"
+    },
+    "trial_day": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "mattress_configuration_id": {
+      "type": "string"
+    },
+    "recommended_firmness_scale_1_to_10": {
+      "type": "number"
+    },
+    "active_100_night_trial_days_remaining": {
+      "type": "integer"
+    },
+    "free_doorstep_exchange_guarantee": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
